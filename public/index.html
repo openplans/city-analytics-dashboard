@@ -1,6 +1,6 @@
 <!doctype html>
   <head>
-    <title>Data Screen</title>
+    <title>Phila.gov Realtime Analytics</title>
     <link rel="stylesheet" href="./stylesheets/base.css" />
     <link href='http://fonts.googleapis.com/css?family=Bitter:400,700,400italic' rel='stylesheet' type='text/css' />
     <meta name="viewport"
@@ -9,20 +9,21 @@
   <body>
     <div class="top-bar">
       <div class="inner">
-        <img src="http://style.codeforamerica.org/media/images/logo-colored.png" alt="Code for America">
+        <img src="images/city-of-phila.png" alt="City of Philadelphia">
       </div>
-      <p>This is an experiement from Code for America. You can log issues and find out more from our <a href="https://github.com/codeforamerica/display-screen">github repository</a>. You should use <a href="https://www.google.com/intl/en_us/chrome/browser/">Chrome</a> to view this dashboard.</p>
-        <div style="width:75%;overflow:hidden" class="small-box traffic">
-          <span id="traffic" class="count" style="float:left">
-            <span class="text-feature" id="traffic-count">&nbsp;</span>
-            visitors online
-          </span>
-          <div class="graph box-in">
-            <div id="traffic-count-graph" class="box-inner">
-            </div>
+
+      <div style="width:75%;overflow:hidden" class="small-box traffic">
+        <span id="traffic" class="count" style="float:left">
+          <span class="text-feature" id="traffic-count">&nbsp;</span>
+          visitors online
+        </span>
+        <div class="graph box-in">
+          <div id="traffic-count-graph" class="box-inner">
           </div>
         </div>
+      </div>
 
+      <p>This is an experiement from Code for America being tested by the <a href="http://phila.gov">City of Philadelphia</a>. You can log issues and find out more from our <a href="https://github.com/codeforamerica/city-analytics-dashboard">github repository</a>. You should use <a href="https://www.google.com/intl/en_us/chrome/browser/">Chrome</a> to view this dashboard.</p>
     </div>
 
     <ul class="bricks">
@@ -115,7 +116,7 @@
           {{#has_url}}<a href="http://{{ url }}" target="_blank">{{/has_url}}
           {{ term }}
           {{#has_url}}</a>{{/has_url}}
-          
+
           {{#has_source}}
             <em>via: {{ source }}</em>
           {{/has_source}}
